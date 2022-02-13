@@ -1,0 +1,19 @@
+service: wordle-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  generate:
+    handler: handler.generate
+    events:
+      - httpApi: 'GET /generate'
+  verify:
+    handler: handler.verify
+    events:
+      - httpApi: 'GET /verify/{word}'
+
+plugins:
+  - serverless-offline

@@ -1,0 +1,28 @@
+{
+  "name": "wordle-api",
+  "description": "Serverless API that helps generate random words and verify a word exists",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "start": "sls offline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Svjard/wordle-api.git"
+  },
+  "author": "Marc Fisher",
+  "devDependencies": {
+    "serverless-offline": "8.4.0"
+  },
+  "engines": {
+    "node": "12.16.1"
+  },
+  "dependencies": {
+    "serverless": "3.2.0"
+  },
+  "files": [
+    "/src",
+    "/lib"
+  ],
+  "license": "MIT"
+}
